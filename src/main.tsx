@@ -9,35 +9,16 @@ import "./index.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Index from "./pages/home";
-import SBC from "./pages/sbc";
-import CIC from "./pages/cic";
-import FCEC from "./pages/fcec";
+// Kalau mau edit satu page, diaktifkan importnya dan dinonaktifkan yang lain. lalu dibuild
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Index />,
-  },
-  {
-    path: "/sbc",
-    element: <SBC />,
-  },
-  {
-    path: "/cic",
-    element: <CIC />,
-  },
-  {
-    path: "/fcec",
-    element: <FCEC />,
-  },
-]);
+//import Page from "./pages/home";
+import Page from "./pages/sbc";
+//import Page from "./pages/cic";
+//import Page from "./pages/fcec";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Page />
   </React.StrictMode>
 );
