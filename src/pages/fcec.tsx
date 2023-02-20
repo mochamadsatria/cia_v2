@@ -9,7 +9,6 @@ import {
 import { faPhone, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Disclosure } from "@headlessui/react";
-import axios from "axios";
 
 const navigations = [
   {
@@ -46,7 +45,7 @@ function Navbar() {
           <div className="flex justify-between px-5">
             <a href={"/"}>
               <img
-                src={"/logo.png"}
+                src={"/imgs/logo.png"}
                 alt="11th Civil In Action"
                 width={150}
                 height={10}
@@ -78,7 +77,7 @@ function Navbar() {
       <header className="hidden sm:flex flex-col sm:flex-row justify-between items-center px-20 py-4 fixed w-full backdrop-brightness-50 z-50">
         <a href={"/"}>
           <img
-            src={"/logo.png"}
+            src={"/imgs/logo.png"}
             alt="11th Civil In Action"
             width={150}
             height={10}
@@ -112,12 +111,12 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
       <div className="bg-[#0173BC]">
         <div
           id="information"
-          className="bg-[url('/fcec/bg-1.png')] bg-[length:100%_400px] sm:bg-[length:100%_600px] lg:bg-[length:100%_1000px] bg-no-repeat h-[64vh] sm:h-screen lg:h-[130vh]"
+          className="bg-[url('/imgs/fcec/bg-1.png')] bg-[length:100%_400px] sm:bg-[length:100%_600px] lg:bg-[length:100%_1000px] bg-no-repeat h-[64vh] sm:h-screen lg:h-[130vh]"
         >
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 justify-center items-center  px-10 pb-10 pt-10 sm:pt-32 lg:pt-56">
             <div className=" relative w-36 h-36 lg:w-80 lg:h-80">
               <img
-                src={"/fcec/logo.png"}
+                src={"/imgs/fcec/logo.png"}
                 className=" w-full h-full"
                 alt="Civil Innovation Challenge"
                 //className="mt-[-135px]"
@@ -149,10 +148,10 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           </div>
         </div>
 
-        <div className="flex flex-col items-center space-y-60 bg-[url('/fcec/bg-2.png')] bg-[length:100%_200px] md:bg-[length:100%_400px] lg:bg-[length:100%_600px] bg-no-repeat bg-center">
+        <div className="flex flex-col items-center space-y-60 bg-[url('/imgs/fcec/bg-2.png')] bg-[length:100%_200px] md:bg-[length:100%_400px] lg:bg-[length:100%_600px] bg-no-repeat bg-center">
           <div className=" relative h-36 md:h-56 w-[75vw] lg:h-96 mt-40 lg:mt-20">
             <img
-              src={"/fcec/coming-soon.png"}
+              src={"/imgs/fcec/coming-soon.png"}
               className=" w-full h-full"
               alt="Civil Innovation Challenge"
               //className="mt-[-135px]"
@@ -184,7 +183,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           </div>
         </div>
 
-        <div className="bg-[url('/fcec/bg-3.png')] bg-[length:100%_500px] lg:bg-[length:100%_2000px] bg-no-repeat h-[185vh] sm:h-[125vh] md:h-[125vh] lg:h-[190vh] flex flex-col items-center pt-56 lg:pt-96 ">
+        <div className="bg-[url('/imgs/fcec/bg-3.png')] bg-[length:100%_500px] lg:bg-[length:100%_2000px] bg-no-repeat h-[185vh] sm:h-[125vh] md:h-[125vh] lg:h-[190vh] flex flex-col items-center pt-56 lg:pt-96 ">
           <h2 className=" text-8xl font-bold text-white">TEMA</h2>
           <p className=" text-center max-w-lg text-white text-xl">
             <em>
@@ -232,14 +231,14 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
 
         <div
           id="timeline"
-          className="bg-[url('/fcec/bg-4.png')] bg-contain md:bg-[length:100%_700px] lg:bg-[length:100%_900px] xl:bg-[length:100%_1000px] bg-no-repeat h-[40vh] md:h-[100vh] lg:h-[150vh] mt-36 sm:mt-96 md:mt-0 lg:-mt-48"
+          className="bg-[url('/imgs/fcec/bg-4.png')] bg-contain md:bg-[length:100%_700px] lg:bg-[length:100%_900px] xl:bg-[length:100%_1000px] bg-no-repeat h-[40vh] md:h-[100vh] lg:h-[150vh] mt-36 sm:mt-96 md:mt-0 lg:-mt-48"
         ></div>
 
-        <div className="bg-[url('/fcec/bg-5.png')] bg-[length:100%_500px] lg:bg-[length:100%_800px] bg-no-repeat h-[90vh] lg:h-[110vh] relative">
+        <div className="bg-[url('/imgs/fcec/bg-5.png')] bg-[length:100%_500px] lg:bg-[length:100%_800px] bg-no-repeat h-[90vh] lg:h-[110vh] relative">
           <h2 className=" text-6xl text-white font-bold absolute right-2 lg:right-28">
             <div className=" relative w-[20rem] h-14 sm:w-[40rem] sm:h-28">
               <img
-                src={"/fcec/total-hadiah.png"}
+                src={"/imgs/fcec/total-hadiah.png"}
                 className=" w-full h-full"
                 alt="Total hadiah"
                 //className="mt-[-135px]"
@@ -250,7 +249,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
             <div className="flex gap-5 items-center justify-end">
               <div className=" relative">
                 <img
-                  src={"/fcec/thropy-1.png"}
+                  src={"/imgs/fcec/thropy-1.png"}
                   width={150}
                   height={150}
                   alt="First prize"
@@ -264,7 +263,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
             <div className="flex gap-5 items-center justify-end">
               <div className=" relative">
                 <img
-                  src={"/fcec/thropy-2.png"}
+                  src={"/imgs/fcec/thropy-2.png"}
                   width={100}
                   height={100}
                   alt="Second prize"
@@ -278,7 +277,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
             <div className="flex gap-5 items-center justify-end">
               <div className=" relative">
                 <img
-                  src={"/fcec/thropy-3.png"}
+                  src={"/imgs/fcec/thropy-3.png"}
                   width={75}
                   height={75}
                   alt="Third prize"
@@ -295,7 +294,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
         <div className="flex flex-col items-center gap-10 py-10 ">
           <div className=" relative w-3/4 lg:w-1/2 h-36 lg:h-72">
             <img
-              src={"/fcec/free.png"}
+              src={"/imgs/fcec/free.png"}
               className=" w-full h-full"
               alt="Third prize"
               //className="mt-[-135px]"
@@ -308,7 +307,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           >
             <div className=" relative w-1/2 lg:w-1/4 h-8 lg:h-16">
               <img
-                src={"/fcec/register-button.png"}
+                src={"/imgs/fcec/register-button.png"}
                 className=" w-full h-full"
                 alt="Third prize"
                 //className="mt-[-135px]"
@@ -317,14 +316,14 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           </a>
         </div>
 
-        <div className="bg-[url('/fcec/bg-7.png')] bg-[length:100%_2000px] bg-no-repeat h-[400vh]">
+        <div className="bg-[url('/imgs/fcec/bg-7.png')] bg-[length:100%_2000px] bg-no-repeat h-[400vh]">
           <div className="flex flex-col items-center pt-48 gap-10" id="tor">
             <h2 className=" text-4xl lg:text-6xl font-bold">
               TERM OF REFERENCE
             </h2>
             <div className=" relative w-52 h-52">
               <img
-                src={"/fcec/book.png"}
+                src={"/imgs/fcec/book.png"}
                 className=" w-full h-full"
                 alt="Third prize"
                 //className="mt-[-135px]"
@@ -339,7 +338,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           </div>
           <div
             id="register"
-            className="flex flex-col items-center gap-20 mt-40 bg-[url('/fcec/bg-6.png')] bg-[length:100%_2000px]"
+            className="flex flex-col items-center gap-20 mt-40 bg-[url('/imgs/fcec/bg-6.png')] bg-[length:100%_2000px]"
           >
             <h2 className=" text-4xl font-bold">PENDAFTARAN</h2>
             <div className=" max-w-3xl w-full space-y-5 bg-[#F4DAA4] p-5 rounded">
@@ -347,7 +346,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                 <div>
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/1.png"}
+                      src={"/imgs/fcec/1.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -366,7 +365,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                   {" "}
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/2.png"}
+                      src={"/imgs/fcec/2.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -386,7 +385,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                   {" "}
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/3.png"}
+                      src={"/imgs/fcec/3.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -408,7 +407,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                 <div>
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/4.png"}
+                      src={"/imgs/fcec/4.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -445,7 +444,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                   {" "}
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/5.png"}
+                      src={"/imgs/fcec/5.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -469,7 +468,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                   {" "}
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/6.png"}
+                      src={"/imgs/fcec/6.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -493,7 +492,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                   {" "}
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/7.png"}
+                      src={"/imgs/fcec/7.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -511,7 +510,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                   {" "}
                   <div className="relative w-10 h-10">
                     <img
-                      src={"/fcec/8.png"}
+                      src={"/imgs/fcec/8.png"}
                       className=" w-full h-full"
                       alt="Pendaftaran fcec 1"
                       //className="mt-[-135px]"
@@ -592,7 +591,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
             </div>
           </div>
         </div>
-        <div className=" flex flex-col items-center lg:mt-20 text-white gap-10 bg-[url('/fcec/bg-8.png')] bg-[length:100%_400px] bg-no-repeat h-[90vh] lg:h-[80vh] bg-[#03293E] bg-center py-20 mt-96">
+        <div className=" flex flex-col items-center lg:mt-20 text-white gap-10 bg-[url('/imgs/fcec/bg-8.png')] bg-[length:100%_400px] bg-no-repeat h-[90vh] lg:h-[80vh] bg-[#03293E] bg-center py-20 mt-96">
           <h2 className=" text-4xl lg:text-6xl font-bold">kontak</h2>
           <div className="flex gap-5 lg:gap-20 flex-col lg:flex-row items-center">
             <div className="flex flex-col gap-3">
@@ -635,7 +634,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           <div className=" w-full h-max flex justify-center mb-5">
             <div className="relative w-3/4 lg:w-1/2 h-16 lg:h-28">
               <img
-                src={"/fcec/logoss.png"}
+                src={"/imgs/fcec/logoss.png"}
                 className=" w-full h-full"
                 alt="Pendaftaran fcec 1"
                 //className="mt-[-135px]"

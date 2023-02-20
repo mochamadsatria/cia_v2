@@ -13,8 +13,8 @@ import ReactDOM from "react-dom/client";
 // Kalau mau edit satu page, diaktifkan importnya dan dinonaktifkan yang lain. lalu dibuild
 
 //import Page from "./pages/home";
-import Page from "./pages/sbc";
-//import Page from "./pages/cic";
+//import Page from "./pages/sbc";
+import Page from "./pages/cic";
 //import Page from "./pages/fcec";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

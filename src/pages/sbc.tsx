@@ -9,7 +9,6 @@ import {
 import { faPhone, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Disclosure } from "@headlessui/react";
-import axios from "axios";
 
 const navigations = [
   {
@@ -49,13 +48,13 @@ export default function SBC() {
 Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa, Indonesia Tangguh Bencana”."
         />
       </head>
-      <div className="bg-[url('/sbc/bg-pattern-1.png')] bg-[length:150px_150px]">
+      <div className="bg-[url('/imgs/sbc/bg-pattern-1.png')] bg-[length:150px_150px]">
         <div className="block sm:hidden fixed w-full backdrop-brightness-50 z-50">
           <Disclosure>
             <div className="flex justify-between px-5">
               <a href={"/"}>
                 <img
-                  src={"/logo.png"}
+                  src={"/imgs/logo.png"}
                   alt="11th Civil In Action"
                   width={150}
                   height={10}
@@ -88,7 +87,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
         <header className="hidden sm:flex flex-col sm:flex-row justify-between items-center px-20 py-4 fixed w-full backdrop-brightness-50 z-50">
           <a href={"/"}>
             <img
-              src={"/logo.png"}
+              src={"/imgs/logo.png"}
               alt="11th Civil In Action"
               width={150}
               height={10}
@@ -104,12 +103,12 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           </nav>
         </header>
 
-        <div className="bg-[url('/sbc/bg-1.png')] bg-contain lg:bg-[length:100%_1000px] bg-no-repeat">
+        <div className="bg-[url('/imgs/sbc/bg-1.png')] bg-contain lg:bg-[length:100%_1000px] bg-no-repeat">
           <div className="lg:h-screen" id="event">
             <div className="flex gap-3 md:gap-5 xl:gap-10 justify-end py-8 sm:py-24 md:py-32 lg:py-44 xl:py-36">
               <div className="relative w-32 h-28 md:w-44 md:h-40 lg:w-60 lg:h-56 xl:w-80 xl:h-78 2xl:w-96 2xl:h-80">
                 <img
-                  src={"/sbc/logo.png"}
+                  src={"/imgs/sbc/logo.png"}
                   alt="Sustainable Bridge Competition 11th Civil In Action"
                   className=" w-full h-full mr-3 md:mr-5 lg:mr-10"
                   sizes="(max-width: 768px) 20vw, (max-width: 1200px) 10vw, 2 3vw"
@@ -159,7 +158,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           <div className="relative my-44 md:my-64 lg:my-80 flex justify-center">
             <div className="relative w-3/4 h-28 md:h-40 lg:h-52">
               <img
-                src={"/sbc/open regis.png"}
+                src={"/imgs/sbc/open regis.png"}
                 alt="Open registration SBC"
                 className=" w-full h-full"
               />
@@ -170,7 +169,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           className=" bg-gradient-to-b from-transparent to-sbc-red"
           id="about"
         >
-          <div className="bg-[url('/sbc/bg-2.png')] bg-[length:100%_630px] xl:bg-[length:100%_730px] bg-no-repeat h-screen relative">
+          <div className="bg-[url('/imgs/sbc/bg-2.png')] bg-[length:100%_630px] xl:bg-[length:100%_730px] bg-no-repeat h-screen relative">
             <div className="z-0 pt-60 md:pt-56 lg:pt-52 xl:pt-40 flex justify-center">
               <h1 className=" text-stroke-white text-stroke-2 text-transparent text-7xl md:text-[10rem] lg:text-[11rem] xl:text-[15.5rem] 2xl:text-[18rem] font-bold">
                 TENTANG&nbsp;SBC
@@ -199,7 +198,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
         </div>
 
         <div className="bg-sbc-red">
-          <div className="bg-[url('/sbc/bridge-1.png')] bg-contain md:bg-[length:180%_1000px] lg:bg-[length:100%_1000px] bg-no-repeat py-36 relative">
+          <div className="bg-[url('/imgs/sbc/bridge-1.png')] bg-contain md:bg-[length:180%_1000px] lg:bg-[length:100%_1000px] bg-no-repeat py-36 relative">
             <span className="absolute z-0 right-0 rotate-90 text-[20rem] mt-[-70px] mr-[-300px] text-stroke-white text-stroke-2 text-transparent opacity-30 font-bold">
               TEMA
             </span>
@@ -223,7 +222,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
               <div className="flex flex-col lg:flex-row text-white w-full md:w-1/2 rounded overflow-hidden mt-10 shadow-lg outline outline-white">
                 <div className="flex flex-col gap-3 items-center p-5 bg-blue-500">
                   <img
-                    src={"/sbc/time-icon.png"}
+                    src={"/imgs/sbc/time-icon.png"}
                     width={40}
                     height={40}
                     alt="Efisien"
@@ -237,7 +236,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                 </div>
                 <div className="flex flex-col gap-3 items-center p-5 bg-yellow-500">
                   <img
-                    src={"/sbc/lamp-icon.png"}
+                    src={"/imgs/sbc/lamp-icon.png"}
                     width={40}
                     height={40}
                     alt="Inovatif"
@@ -250,7 +249,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
                 </div>
                 <div className="flex flex-col gap-3 items-center p-5 bg-red-500">
                   <img
-                    src={"/sbc/bridge-icon.png"}
+                    src={"/imgs/sbc/bridge-icon.png"}
                     width={40}
                     height={40}
                     alt="Pilar Pembangunan Berkelanjutan"
@@ -272,7 +271,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
               id="timeline"
             >
               <img
-                src={"/sbc/timeline.png"}
+                src={"/imgs/sbc/timeline.png"}
                 className=" w-full h-full z-0"
                 alt="Timeline SBC"
               />
@@ -309,7 +308,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
             </div>
 
             <div className="bg-black">
-              <div className="bg-[url('/sbc/bg-3.png')] bg-contain md:bg-[length:100%_450px] lg:bg-[length:100%_720px] bg-bottom bg-no-repeat h-80 md:h-screen">
+              <div className="bg-[url('/imgs/sbc/bg-3.png')] bg-contain md:bg-[length:100%_450px] lg:bg-[length:100%_720px] bg-bottom bg-no-repeat h-80 md:h-screen">
                 <div className="flex justify-center lg:items-center h-full">
                   <div className=" bg-blue-500 text-white p-5 rounded flex flex-col gap-4 pt-[-60px] md:mt-36 shadow-lg h-min lg:scale-150">
                     <h2 className="text-2xl font-bold text-center ">
@@ -337,19 +336,19 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
           </div>
         </div>
 
-        <div className="bg-[url('/sbc/bridge-2.png')] bg-cover bg-no-repeat bg-bottom">
-          <div className="bg-[url('/sbc/bg-4.png')] bg-contain md:bg-[length:180%_500px] lg:bg-[length:100%_600px] bg-no-repeat h-[100vh] bg-top py-20 relative">
+        <div className="bg-[url('/imgs/sbc/bridge-2.png')] bg-cover bg-no-repeat bg-bottom">
+          <div className="bg-[url('/imgs/sbc/bg-4.png')] bg-contain md:bg-[length:180%_500px] lg:bg-[length:100%_600px] bg-no-repeat h-[100vh] bg-top py-20 relative">
             <h2 className=" font-bold text-9xl absolute mt-[-80px] ml-6 opacity-0">
               PRIZE
             </h2>
-            <div className="bg-[url('/sbc/bg-5.png')] bg-[length:80%_400px] md:bg-[length:50%_400px] lg:bg-[length:35%_500px] bg-no-repeat bg-top h-[100vh]">
+            <div className="bg-[url('/imgs/sbc/bg-5.png')] bg-[length:80%_400px] md:bg-[length:50%_400px] lg:bg-[length:35%_500px] bg-no-repeat bg-top h-[100vh]">
               <div className="flex justify-center pb-10 ">
                 <h1 className="text-4xl font-bold mt-[-15px]">HADIAH</h1>
               </div>
               <div className="flex flex-col gap-4 items-center lg:scale-125">
                 <div className="flex items-center relative">
                   <img
-                    src={"/sbc/thropy-1.png"}
+                    src={"/imgs/sbc/thropy-1.png"}
                     width={80}
                     height={80}
                     alt="Juara 1"
@@ -365,7 +364,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
 
                 <div className="flex items-center relative">
                   <img
-                    src={"/sbc/thropy-2.png"}
+                    src={"/imgs/sbc/thropy-2.png"}
                     width={60}
                     height={60}
                     alt="Juara 2"
@@ -381,7 +380,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
 
                 <div className="flex items-center relative">
                   <img
-                    src={"/sbc/thropy-3.png"}
+                    src={"/imgs/sbc/thropy-3.png"}
                     width={50}
                     height={50}
                     alt="Juara 3"
@@ -407,7 +406,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
               <a href="https://files.ciaugm.com/tors/sbc-umum.pdf">
                 <div className="bg-white p-10 rounded">
                   <img
-                    src={"/sbc/book.png"}
+                    src={"/imgs/sbc/book.png"}
                     width={200}
                     height={100}
                     alt="TOR Umum"
@@ -419,7 +418,7 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
               <a href="https://files.ciaugm.com/tors/sbc-soal.pdf">
                 <div className="bg-white p-10 rounded">
                   <img
-                    src={"/sbc/book.png"}
+                    src={"/imgs/sbc/book.png"}
                     width={200}
                     height={100}
                     alt="TOR Soal"
@@ -628,31 +627,31 @@ Pada tahun ini, 11th Civil In Action membawakan tema “Wujudkan Bangsa Perkasa,
 
         <div className="flex gap-10 items-center px-10 flex-wrap justify-center">
           <img
-            src={"/sbc/logo-cia-small.png"}
+            src={"/imgs/sbc/logo-cia-small.png"}
             alt="11th Civil In Action"
             width={150}
             height={10}
           />
           <img
-            src={"/sbc/logo-dept.png"}
+            src={"/imgs/sbc/logo-dept.png"}
             alt="11th Civil In Action"
             width={40}
             height={40}
           />
           <img
-            src={"/sbc/logo-ugm.png"}
+            src={"/imgs/sbc/logo-ugm.png"}
             alt="11th Civil In Action"
             width={100}
             height={40}
           />
           <img
-            src={"/sbc/logo-kmtsl.png"}
+            src={"/imgs/sbc/logo-kmtsl.png"}
             alt="11th Civil In Action"
             width={40}
             height={40}
           />
           <img
-            src={"/sbc/logo-sbc.png"}
+            src={"/imgs/sbc/logo-sbc.png"}
             alt="11th Civil In Action"
             width={150}
             height={10}

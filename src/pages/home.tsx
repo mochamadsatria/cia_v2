@@ -33,6 +33,63 @@ const navigations = [
   },
 ];
 
+const Navbar = () => (
+  <div className="fixed w-full z-50">
+    <div className="block sm:hidden backdrop-brightness-50">
+      <Disclosure>
+        <div className="flex justify-between px-5">
+          <a href={"/"}>
+            <img
+              src={"/imgs/logo.png"}
+              alt="11th Civil In Action"
+              width={150}
+              height={10}
+            />
+          </a>
+          <Disclosure.Button className="py-2">
+            <div className="space-y-2">
+              <span className="block w-5 h-1 rounded-full bg-white"></span>
+              <span className="block w-8 h-1 rounded-full bg-white"></span>
+              <span className="block w-8 h-1 rounded-full bg-white"></span>
+            </div>
+          </Disclosure.Button>
+        </div>
+        <Disclosure.Panel className="text-gray-500">
+          <nav className="flex flex-col md:flex-row items-center text-white font-semibold">
+            {navigations.map((item) => (
+              <a
+                key={"nav." + item.name}
+                className="hover:backdrop-brightness-75 py-4 w-full px-10"
+                href={item.to}
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+        </Disclosure.Panel>
+      </Disclosure>
+    </div>
+    <header className="hidden sm:flex flex-row gap-10 items-center px-20 py-4 relative  backdrop-brightness-50">
+      <a href={"/"}>
+        <img
+          src={"/imgs/logo.png"}
+          alt="11th Civil In Action"
+          width={150}
+          height={10}
+        />
+      </a>
+
+      <nav className="flex flex-col sm:flex-row gap-5 items-center text-white font-semibold">
+        {navigations.map((item) => (
+          <a key={"nav." + item.name} href={item.to}>
+            {item.name}
+          </a>
+        ))}
+      </nav>
+    </header>
+  </div>
+);
+
 export default function Index() {
   return (
     <div className="">
@@ -41,66 +98,13 @@ export default function Index() {
       </head>
       <div className=" bg-[#FEECD4]">
         <div>
-          <div className="bg-[url('/bg-1.png')] bg-no-repeat bg-contain h-[500vh]">
-            <div className="fixed w-full z-50">
-              <div className="block sm:hidden backdrop-brightness-50">
-                <Disclosure>
-                  <div className="flex justify-between px-5">
-                    <a href={"/"}>
-                      <img
-                        src={"/logo.png"}
-                        alt="11th Civil In Action"
-                        width={150}
-                        height={10}
-                      />
-                    </a>
-                    <Disclosure.Button className="py-2">
-                      <div className="space-y-2">
-                        <span className="block w-5 h-1 rounded-full bg-white"></span>
-                        <span className="block w-8 h-1 rounded-full bg-white"></span>
-                        <span className="block w-8 h-1 rounded-full bg-white"></span>
-                      </div>
-                    </Disclosure.Button>
-                  </div>
-                  <Disclosure.Panel className="text-gray-500">
-                    <nav className="flex flex-col md:flex-row items-center text-white font-semibold">
-                      {navigations.map((item) => (
-                        <a
-                          key={"nav." + item.name}
-                          className="hover:backdrop-brightness-75 py-4 w-full px-10"
-                          href={item.to}
-                        >
-                          {item.name}
-                        </a>
-                      ))}
-                    </nav>
-                  </Disclosure.Panel>
-                </Disclosure>
-              </div>
-              <header className="hidden sm:flex flex-row gap-10 items-center px-20 py-4 relative  backdrop-brightness-50">
-                <a href={"/"}>
-                  <img
-                    src={"/logo.png"}
-                    alt="11th Civil In Action"
-                    width={150}
-                    height={10}
-                  />
-                </a>
-
-                <nav className="flex flex-col sm:flex-row gap-5 items-center text-white font-semibold">
-                  {navigations.map((item) => (
-                    <a key={"nav." + item.name} href={item.to}>
-                      {item.name}
-                    </a>
-                  ))}
-                </nav>
-              </header>
-            </div>
+          <div className="bg-[url('/imgs/bg-1.png')] bg-no-repeat bg-contain h-[500vh]">
+            <Navbar />
 
             <div className="flex flex-col items-center justify-center relative top-32 lg:top-64">
               <div className=" w-80 h-24 xl:w-[60rem] xl:h-[18rem] relative rounded">
                 <img
-                  src={"/logo-big.png"}
+                  src={"/imgs/logo-big.png"}
                   alt="11th Civil In Action"
                   className=" w-full h-full"
                 />
@@ -118,7 +122,7 @@ export default function Index() {
                 </h2>
                 <div className="relative w-10/12 sm:w-6/12 lg:w-10/12 xl:w-8/12 h-[40vh] lg:h-[100vh]">
                   <img
-                    src={"/information.png"}
+                    src={"/imgs/information.png"}
                     className=" w-full h-full"
                     alt="Informasi"
                   />
@@ -145,11 +149,11 @@ export default function Index() {
                     ditawarkan. Pada tahun ini, 11th Civil In Action membawakan
                     tema “Wujudkan Bangsa Perkasa, Indonesia Tangguh Bencana”.
                   </p>
-                  <div className="flex gap-10 items-start justify-center mt-28 bg-[url('/bg-9.png')] w-full bg-no-repeat bg-center bg-contain lg:bg-cover h-[50vh] sm:h-[100vh] lg:h-[120vh]">
+                  <div className="flex gap-10 items-start justify-center mt-28 bg-[url('/imgs/bg-9.png')] w-full bg-no-repeat bg-center bg-contain lg:bg-cover h-[50vh] sm:h-[100vh] lg:h-[120vh]">
                     <div className="flex flex-col space-y-2 items-center font-semibold text-xl w-24">
                       <div className=" relative w-14 h-14">
                         <img
-                          src={"/calendar.png"}
+                          src={"/imgs/calendar.png"}
                           className=" w-full h-full"
                           alt="Event counter"
                         />
@@ -160,7 +164,7 @@ export default function Index() {
                     <div className="flex flex-col space-y-2 items-center font-semibold text-xl w-24">
                       <div className=" relative w-14 h-14">
                         <img
-                          src={"/people.png"}
+                          src={"/imgs/people.png"}
                           className=" w-full h-full"
                           alt="Event counter"
                         />
@@ -171,7 +175,7 @@ export default function Index() {
                     <div className="flex flex-col space-y-2 items-center font-semibold text-xl w-24">
                       <div className=" relative w-14 h-14">
                         <img
-                          src={"/thropy.png"}
+                          src={"/imgs/thropy.png"}
                           className=" w-full h-full"
                           alt="Event counter"
                         />
@@ -195,7 +199,7 @@ export default function Index() {
                         <div className="flex flex-col justify-between h-72 w-64 items-center p-10 bg-[#0173BC] rounded-lg outline-dashed">
                           <div className=" relative w-40 h-28">
                             <img
-                              src={"/logo-fcec-white.png"}
+                              src={"/imgs/logo-fcec-white.png"}
                               className=" w-full h-full"
                               alt="SUSTAINABLE BRIDGE COMPETITION"
                             />
@@ -217,7 +221,7 @@ export default function Index() {
                         <div className="flex flex-col justify-between h-72 w-64 items-center p-10 bg-[#EC4E21] rounded-lg outline-dashed">
                           <div className=" relative w-40 h-28">
                             <img
-                              src={"/logo-sbc-white.png"}
+                              src={"/imgs/logo-sbc-white.png"}
                               className=" w-full h-full"
                               alt="SUSTAINABLE BRIDGE COMPETITION"
                             />
@@ -237,7 +241,7 @@ export default function Index() {
                         <div className="flex flex-col justify-between items-center h-72 w-64 p-10 bg-[#FCB342] rounded-lg outline-dashed">
                           <div className=" relative w-20 h-28">
                             <img
-                              src={"/logo-cic-white.png"}
+                              src={"/imgs/logo-cic-white.png"}
                               className=" w-full h-full"
                               alt="SUSTAINABLE BRIDGE COMPETITION"
                             />
@@ -271,7 +275,7 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[url('/bg-8.png')] bg-[length:100%_100px] md:bg-[length:100%_200px] w-full bg-no-repeat h-[30vh] -mt-1 bg-[#FEECD4]"></div>
+              <div className="bg-[url('/imgs/bg-8.png')] bg-[length:100%_100px] md:bg-[length:100%_200px] w-full bg-no-repeat h-[30vh] -mt-1 bg-[#FEECD4]"></div>
 
               <div
                 id="contact"
@@ -333,19 +337,19 @@ export default function Index() {
                 <div>
                   <div className="flex gap-10 items-center px-10 flex-wrap justify-center">
                     <img
-                      src={"/logo-dtsl.png"}
+                      src={"/imgs/logo-dtsl.png"}
                       alt="11th Civil In Action"
                       width={100}
                       height={100}
                     />
                     <img
-                      src={"/logo-ugm.png"}
+                      src={"/imgs/logo-ugm.png"}
                       alt="Universitas Gadjah Mada"
                       width={100}
                       height={100}
                     />
                     <img
-                      src={"/logo-kmtsl.png"}
+                      src={"/imgs/logo-kmtsl.png"}
                       alt="KMTSL"
                       width={100}
                       height={100}
@@ -354,7 +358,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-[url('/bg-10.png')] bg-contain lg:bg-[length:100%_500px] bg-no-repeat w-full h-[50vh] -mt-1 bg-[#FEECD4]">
+              <div className="bg-[url('/imgs/bg-10.png')] bg-contain lg:bg-[length:100%_500px] bg-no-repeat w-full h-[50vh] -mt-1 bg-[#FEECD4]">
                 <div className="flex flex-col items-center mt-40">
                   <h2 className=" font-bold text-2xl lg:text-4xl text-white hidden"></h2>
                 </div>
