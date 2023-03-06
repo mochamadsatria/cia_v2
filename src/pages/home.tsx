@@ -358,7 +358,10 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-[url('/imgs/bg-10.png')] bg-contain lg:bg-[length:100%_500px] bg-no-repeat w-full h-[50vh] -mt-1 bg-[#FEECD4]">
+              <div
+                id="sponsor"
+                className="bg-[url('/imgs/bg-10.png')] bg-contain lg:bg-[length:100%_500px] bg-no-repeat w-full h-[50vh] -mt-1 bg-[#FEECD4]"
+              >
                 <div className="flex flex-col items-center mt-40">
                   <h2 className=" font-bold text-2xl lg:text-4xl text-white hidden"></h2>
                 </div>
